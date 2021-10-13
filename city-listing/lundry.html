@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>Community Hub - Laundry</title>
+    <!-- Google Font(s) -->
+    <link href="https://fonts.googleapis.com/css?family=Capriola|Roboto" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Awesome Icons Font -->
+    <link href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Listing Filter -->
+    <link href="assets/lib/bootstrap-select-master/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="assets/lib/lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- Map -->
+    <link href="assets/lib/Leaflet-1.0.2/dist/leaflet.css" rel="stylesheet">
+    <!-- City Listing Icons -->
+    <link href="assets/fonts/icons/css/import-icons.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/lib/html5shiv-master/dist/html5shiv.min.js"></script>
+      <script src="assets/lib/Respond-master/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Start Body Content Wrapper -->
+    <div class="body-wrapper">
+      <!-- Start header (topbar) -->
+      <div id='divHeader'>
+
+      </div>
+      <!-- End header (topbar) -->
+      <!-- Start Search Popup -->
+      <div class="search-popup container-fluid hero-header">
+        <!-- Start Header Centralizer -->
+        <div class="header-centralizer">
+          <div class="content-centralized">
+            <!-- Start Hero Search -->
+            <div class="hero-search">
+              <form>
+                <fieldset>
+                  <input type="text" class="form-control" data-placeholder="Explore and Enjoy...">
+                  <span class="typingEffect" data-title="Explore and Enjoy//Find New Places//Discover Tasty Goodies//Do Memorable Check-ins//Go Beyond and Beyond"></span>
+                </fieldset>
+                <!-- Start Search Cities -->
+                <div class="search-cities-toggle"></div>
+                <div class="search-cities">
+                  <div class="cities-list">
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/1.jpg')" data-city-id="1"><span>Boston</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/2.jpg')" data-city-id="2"><span>Chicago</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/3.jpg')" data-city-id="0" class="current"><span>Miami</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/4.jpg')" data-city-id="3"><span>New Orleans</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/5.jpg')" data-city-id="4" class="go-more-cities"><span>More Cities</span></a>
+                    <input class="chosen-city" type="hidden" name="city" value="0">
+                  </div>
+                </div>
+                <!-- End Search Cities -->
+                <div class="search-submit">
+                  <input type="submit" value=" ">
+                  <i class="hero-search-icon"></i>
+                </div>
+              </form>
+            </div>
+            <!-- End Hero Search -->
+            <!-- Start Search Categories -->
+            <div class="search-categories">
+              <div class="categories">
+                <a class="icon-platter child" href="#">Restaurant</a>
+                <a class="icon-teacup child" href="#">Café</a>
+                <a class="icon-moon" href="#">Nightlife</a>
+                <a class="icon-landscape" href="#">Outdoor</a>
+                <a class="icon-home" href="#">Lodging</a>
+                <a class="icon-car child" href="#">Car Dealer</a>
+                <a class="icon-hanger child" href="#">Clothing</a>
+                <a class="icon-bench-press child" href="#">Gim</a>
+                <a class="icon-saw child" href="#">Home Service</a>
+                <a class="icon-laundry child" href="#">Laundry</a>
+                <a class="icon-bag-dollar child" href="#">Bank</a>
+                <a class="icon-palette child" href="#">Art Gallery</a>
+                <a class="icon-library child" href="#">Bookstore</a>
+                <a class="icon-chair child" href="#">Furniture</a>
+                <a class="icon-receipt" href="#">Coupons</a>
+                <a class="icon-lan2" href="#">Online Order</a>
+                <a class="icon-paw" href="#">Pets Friendly</a>
+                <a class="icon-wheelchair" href="#">Accessible</a>
+                <a class="icon-wifi" href="#">Wi-Fi</a>
+                <a class="icon-city" href="#">More Options</a>
+              </div>
+            </div>
+            <!-- End Search Categories -->
+          </div>
+        </div>
+      </div>
+      <!-- End Search Popup -->
+      <!-- Start Login/Register Popup -->
+     
+      <!-- End Login/Register Popup -->
+      <!-- Start Page Header -->
+     
+            <div class="container-fluid pg-header" style="background-image: url(assets/images/trending/wash.jpg);">
+              
+        <div class="breadcrumbs text-left">
+          
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Laundry</a></li>
+          </ul>
+        </div>
+        
+        <div class="pg-header-content">
+          <h1 class="pg-title">
+
+
+            <div class="container-fluid hero-header h-video ">
+              <!-- Start Header Centralizer -->
+              <div class="header-centralizer">
+                <div class="content-centralized">
+                  <!-- Start Hero Search -->
+                  <div class="hero-search">
+                    <form>
+                      <fieldset>
+                        <input type="text" class="form-control" data-placeholder="Explore and Enjoy...">
+                        <span class="typingEffect"
+                          data-title="Explore and Enjoy//Find New Places//Discover Tasty Goodies//Do Memorable Check-ins//Go Beyond Horizon"></span>
+                      </fieldset>
+                      <!-- Start Search cities Toggle -->
+                      <div class="search-cities-toggle"></div>
+                      <!-- End Search cities Toggle -->
+                      <!-- Start Search Cities -->
+                      <div class="search-cities">
+                        <!-- <div class="cities-list">
+                            <a href="#" style="background-image:url('assets/images/cities/thumbs/1.jpg')" data-city-id="1"><span>Boston</span></a>
+                            <a href="#" style="background-image:url('assets/images/cities/thumbs/2.jpg')" data-city-id="2"><span>Chicago</span></a>
+                            <a href="#" style="background-image:url('assets/images/cities/thumbs/3.jpg')" data-city-id="0" class="current"><span>Miami</span></a>
+                            <a href="#" style="background-image:url('assets/images/cities/thumbs/4.jpg')" data-city-id="3"><span>New Orleans</span></a>
+                            <a href="#" style="background-image:url('assets/images/cities/thumbs/5.jpg')" data-city-id="4" class="go-more-cities"><span>More Cities</span></a>
+                            <input class="chosen-city" type="hidden" name="city" value="0">
+                          </div> -->
+                      </div>
+                      <!-- End Search Cities -->
+                      <div class="search-submit">
+                        <input type="submit" value=" ">
+                        <i class="hero-search-icon"></i>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- End Hero Search -->
+                  <!-- Start Search Categories -->
+                  <div class="search-categories">
+                    <div class="categories">
+                      <a class="icon-platter child" href="resturant.html">Restaurant</a>
+                      <a class="icon-teacup child" href="coffee.html">Café</a>
+                      <a class="icon-spotlights" href="activites.html">Activities</a>
+                      <a class="icon-presentation" href="Cinema.html">Cinema</a>
+                      <a class="icon-home" href="hotel.html">Hotel</a>
+                      <a class="icon-car child" href="#">Car Dealer</a>
+                      <a class="icon-first-aid" href="hospital.html">Hospital</a>
+                      <a class="icon-bench-press child" href="gym.html">Gym</a>
+                      <a class="icon-laundry child" href="lundry.html">Laundry</a>
+                      <a class="icon-pills" href="pharmacy.html">Pharmacy</a>
+                      <a class="icon-plane" href="Airline.html">Airline</a>
+                      <a class="icon-haircut" href="BeautySaloon.html">Beauty Saloon</a>
+                      <a class="icon-gas" href="Gasoline.html">Gasoline filling</a>
+                      <a class="icon-power" href="repair.html">Electrical Repair</a>
+                      <a class="icon-broom" href="House-Maid.html">House Maid</a>
+                    </div>
+                  </div>
+                  <!-- End Search Categories -->
+                </div>
+              </div>
+            </div>
+           <!-- Hotel Not Hotel : Unique Stay in Amsterdam -->
+          </h1>
+        </div>
+        <div class="pg-header-icon icon-laundry"></div>
+      </div>
+      <!-- End Page Header -->
+      <!-- Start Single Blog Content -->
+      <div class="container-fluid how color-bg">
+        <div class="row">
+          <!-- Start Single Content -->
+          
+      <!-- End Single Blog Content -->
+      <!-- Start Related Articles -->
+     
+ <div class="container-fluid front-categories leaf">
+  <div class="row row-title">
+    <h1 class=" wow animate__animated  animate__fadeInLeftBig">What Do You Need Today?</h1>
+    <h4 class=" wow animate__animated  animate__fadeInLeftBig" style="color: gray; font-size: 15px; font-weight: 500;" >Easily glimpse hand picked places</h4>
+  </div>
+  <div class="row cat-itens">
+    <div class="cat-item  wow animate__animated animate__rubberBand">
+      <div class="cat-overlay"></div>
+      <div  class="cat-image" style="background-image:url('assets/images/lundry/1.jpg')"></div>
+      <div class="cat-icon icon-laundry"></div>
+      <div class="cat-counter">1</div>
+      <a href="https://aljabrlaundry.com/ar/home.php">
+        <div class="cat-text">Aljabr Laundry</div>
+      </a>
+    </div>
+    <div class="cat-item  wow animate__animated animate__rubberBand">
+      <div class="cat-overlay"></div>
+      <div class="cat-image" style="background-image:url('assets/images/lundry/c1.png')"></div>
+      <div class="cat-icon icon-laundry"></div>
+      <div class="cat-counter">2</div>
+      <a href="https://business.google.com/v/_/04087744940859723755/57c9/_?caid=14174864138&agid=127274708522&gclid=Cj0KCQjwnoqLBhD4ARIsAL5JedJPZpcI2DOUzUrvlXX8XwKxsEkX4CQMMGaeocEvXI1EinkVtbW9GsUaAtwXEALw_wcB">
+        <div class="cat-text">Cyan Laundry</div>
+      </a>
+    </div>
+    <div class="cat-item  wow animate__animated animate__rubberBand">
+      <div class="cat-overlay"></div>
+      <div  class="cat-image" style="background-image:url('assets/images/lundry/b.png')"></div>
+      <div class="cat-icon icon-laundry"></div>
+      <div class="cat-counter">3</div>
+      <a href="https://bubbleslaundry.sa/ar/">
+        <div class="cat-text">Bubbles Laundry</div>
+      </a>
+    </div>
+    <div class="cat-item  wow animate__animated animate__rubberBand">
+      <div class="cat-overlay"></div>
+      <div  class="cat-image" style="background-image:url('assets/images/lundry/dry.jpg')"></div>
+      <div class="cat-icon icon-laundry"></div>
+      <div class="cat-counter">4</div>
+      <a href="https://dry-cleaner-1558.business.site/">
+        <div class="cat-text">International Laundry</div>
+      </a>
+    </div>
+    <div class="cat-item  wow animate__animated animate__rubberBand">
+      <div class="cat-overlay"></div>
+      <div  class="cat-image" style="background-image:url('assets/images/lundry/e.jpg')"></div>
+      <div class="cat-icon icon-laundry"></div>
+      <div class="cat-counter">5</div>
+      <a href="https://laundromat-2313.business.site/?utm_source=gmb&utm_medium=referral">
+        <div class="cat-text">Elysee Laundry</div>
+      </a>
+    </div>
+    <div class="cat-item  wow animate__animated animate__rubberBand">
+      <div class="cat-overlay"></div>
+      <div  class="cat-image" style="background-image:url('assets/images/lundry/r.jpg')"></div>
+      <div class="cat-icon icon-laundry"></div>
+      <div class="cat-counter">6</div>
+      <a href="https://laundry-1839.business.site/">
+        <div class="cat-text">Rama Laundry</div>
+      </a>
+    </div>
+    <div class="cat-item  wow animate__animated animate__rubberBand">
+      <div class="cat-overlay"></div>
+      <div  class="cat-image" style="background-image:url('assets/images/lundry/H.png')"></div>
+      <div class="cat-icon icon-laundry"></div>
+      <div class="cat-counter">7</div>
+      <a href="https://sites.google.com/view/jslaundry">
+        <div class="cat-text">Js Laundry</div>
+      </a>
+    </div>
+    <div class="cat-item  wow animate__animated animate__rubberBand">
+      <div class="cat-overlay"></div>
+      <div  class="cat-image" style="background-image:url('assets/images/lundry/ha.png')"></div>
+      <div class="cat-icon icon-laundry"></div>
+      <div class="cat-counter">8</div>
+      <a href="https://laundry-556.business.site/">
+        <div class="cat-text">Heijen Laundry</div>
+      </a>
+    </div>
+    <div class="cat-item  wow animate__animated animate__rubberBand">
+      <div class="cat-overlay"></div>
+      <div  class="cat-image" style="background-image:url('assets/images/lundry/LAB.png')"></div>
+      <div class="cat-icon icon-laundry"></div>
+      <div class="cat-counter">9</div>
+      <a href="https://www.laundrylabksa.com/">
+        <div class="cat-text">Laundry Lab </div>
+      </a>
+    </div>
+    <div class="cat-item  wow animate__animated animate__rubberBand">
+      <div class="cat-overlay"></div>
+      <div  class="cat-image" style="background-image:url('assets/images/lundry/rd.png')"></div>
+      <div class="cat-icon icon-laundry"></div>
+      <div class="cat-counter">10</div>
+      <a href="https://www.alrahden.com.sa/">
+        <div class="cat-text">Alrahden</div>
+      </a>
+    </div>
+
+<!-- End Front Categories -->
+<!-- Start Trending -->
+<div >
+  <div class="row row-title">
+    <h1 class="  wow animate__animated  animate__fadeInLeftBig">Trending Right Now</h1>
+    <h4 class=" wow animate__animated  animate__fadeInLeftBig" style="color: gray; font-size: 15px; font-weight: 500;">The most quoted recently</h4>
+  </div>
+  <div class="row listing">
+    <!-- Start Trending Item Col -->
+    <div class="col-sm-3 wow animate__animated animate__backInUp">
+      <div class="listing-item">
+        <a href="#" class="category-icon icon-laundry"></a>
+        <div class="listing-item-rating">4.2</div>
+        <a href="#" class="listing-item-link">
+          <div class="listing-item-title-centralizer">
+            <div class="listing-item-title">
+              Alrahden
+              <div class="ribbon">~ 20SR-50SR</div>
+            </div>
+          </div>
+          <img alt="" src="assets/images/lundry/trending/rd.png" />
+        </a>
+        <div class="listing-item-data">
+         <!-- <a class="listing-item-address" href="#">
+            3014 20th St San Francisco
+          </a>
+          <div class="listing-item-excerpt">
+            The love of coffee shines all the woody ambience
+          </div> -->
+        </div>
+        <div class="listing-category-name">
+          <a href="#"  style="color: gray; font-size: 15px; font-weight: 500;">Alrahden</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Trending Item Col -->
+    <!-- Start Trending Item Col -->
+    <div class="col-sm-3 wow animate__animated animate__backInUp">
+      <div class="listing-item">
+        <a href="https://bubbleslaundry.sa/ar/" class="category-icon icon-laundry"></a>
+        <div class="listing-item-rating">4.2</div>
+        <a href="https://bubbleslaundry.sa/ar/" class="listing-item-link">
+          <div class="listing-item-title-centralizer">
+            <div class="listing-item-title">
+              Bubbles Laundry
+              <div class="ribbon">~ 22SR-40SR</div>
+            </div>
+          </div>
+          <img alt="" src="assets/images/lundry/trending/b.png" />
+        </a>
+        <div class="listing-item-data">
+         <!-- <a class="listing-item-address" href="#">
+            3014 20th St San Francisco
+          </a>
+          <div class="listing-item-excerpt">
+            The love of coffee shines all the woody ambience
+          </div> -->
+        </div>
+        <div class="listing-category-name">
+          <a href="https://bubbleslaundry.sa/ar/" style="color: gray; font-size: 15px; font-weight: 500;">Bubbles Laundry</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Trending Item Col -->
+    <!-- Start Trending Item Col -->
+    <div class="col-sm-3 wow animate__animated animate__backInUp">
+      <div class="listing-item">
+        <a href="https://business.google.com/v/_/04087744940859723755/57c9/_?caid=14174864138&agid=127274708522&gclid=Cj0KCQjwnoqLBhD4ARIsAL5JedJPZpcI2DOUzUrvlXX8XwKxsEkX4CQMMGaeocEvXI1EinkVtbW9GsUaAtwXEALw_wcB" class="category-icon icon-laundry"></a>
+        <div class="listing-item-rating">4.2</div>
+        <a href="https://business.google.com/v/_/04087744940859723755/57c9/_?caid=14174864138&agid=127274708522&gclid=Cj0KCQjwnoqLBhD4ARIsAL5JedJPZpcI2DOUzUrvlXX8XwKxsEkX4CQMMGaeocEvXI1EinkVtbW9GsUaAtwXEALw_wcB" class="listing-item-link">
+          <div class="listing-item-title-centralizer">
+            <div class="listing-item-title">
+              Cyan Laundry
+              <div class="ribbon">~ 5 SR-50SR</div>
+            </div>
+          </div>
+          <img alt="" src="assets/images/lundry/trending/c1.png" />
+        </a>
+        <div class="listing-item-data">
+         <!-- <a class="listing-item-address" href="#">
+            3014 20th St San Francisco
+          </a>
+          <div class="listing-item-excerpt">
+            The love of coffee shines all the woody ambience
+          </div> -->
+        </div>
+        <div class="listing-category-name">
+          <a  style="color: gray; font-size: 15px; font-weight: 500;" href="https://business.google.com/v/_/04087744940859723755/57c9/_?caid=14174864138&agid=127274708522&gclid=Cj0KCQjwnoqLBhD4ARIsAL5JedJPZpcI2DOUzUrvlXX8XwKxsEkX4CQMMGaeocEvXI1EinkVtbW9GsUaAtwXEALw_wcB">Cyan Laundry</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Trending Item Col -->
+    <!-- Start Trending Item Col -->
+    <div class="col-sm-3 wow animate__animated animate__backInUp">
+      <div class="listing-item">
+        <a href="https://www.laundrylabksa.com/" class="category-icon icon-laundry"></a>
+        <div class="listing-item-rating">4.2</div>
+        <a href="https://www.laundrylabksa.com/" class="listing-item-link">
+          <div class="listing-item-title-centralizer">
+            <div class="listing-item-title">
+              Laundry Lab
+              <div class="ribbon">~ 20SR-50SR</div>
+            </div>
+          </div>
+          <img alt="" src="assets/images/lundry/trending/LAB.png" />
+        </a>
+        <div class="listing-item-data">
+         <!-- <a class="listing-item-address" href="#">
+            3014 20th St San Francisco
+          </a>
+          <div class="listing-item-excerpt">
+            The love of coffee shines all the woody ambience
+          </div> -->
+        </div>
+        <div class="listing-category-name">
+          <a href="https://www.laundrylabksa.com/"  style="color: gray; font-size: 15px; font-weight: 500;">Laundry Lab</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Trending Item Col -->
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- End Related Article -->
+
+
+
+      <!-- Start Footer -->
+      <div id='divFooter'>
+
+      </div>
+      <!-- End Footer -->
+    
+    <!-- End Body Content Wrapper -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/jquery-ui.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/lib/lightbox2-master/dist/js/lightbox.min.js"></script>
+    <!-- Typing Effect -->
+    <script src="assets/lib/typed.js-master/dist/typed.min.js"></script>
+    <!-- Dragging Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery.dragscroll.js"></script>
+    <!-- Horizontal Mousewheel Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery-mousewheel-master/jquery.mousewheel.min.js"></script>
+    <!-- Listing Filter -->
+    <script src="assets/lib/bootstrap-select-master/js/bootstrap-select.js"></script>
+    <!-- To Self Hosted Hero Video -->
+    <script src="assets/lib/bideo.js-master/bideo.js"></script>
+    <!-- Map -->
+    <script src="assets/lib/Leaflet-1.0.2/build/deps.js"></script>
+  	<script src="assets/lib/Leaflet-1.0.2/debug/leaflet-include.js"></script>
+    <script src="assets/js/map-markers-samples/sampleMapSingleListingMarker.js"></script>
+    <!-- Main Javascript -->
+    <script src="assets/js/main.js"></script>
+
+    
+    <script>
+
+      
+      $(function(){
+          $('#divHeader').load('header.html');
+      });
+  
+      
+      $(function(){
+          $('#divFooter').load('footer.html');
+      });
+      </script>
+
+<script src="wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+  </body>
+</html>

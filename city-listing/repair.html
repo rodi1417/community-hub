@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>Community Hub - Reparing</title>
+    <!-- Google Font(s) -->
+    <link href="https://fonts.googleapis.com/css?family=Capriola|Roboto" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Awesome Icons Font -->
+    <link href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Listing Filter -->
+    <link href="assets/lib/bootstrap-select-master/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="assets/lib/lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- Map -->
+    <link href="assets/lib/Leaflet-1.0.2/dist/leaflet.css" rel="stylesheet">
+    <!-- City Listing Icons -->
+    <link href="assets/fonts/icons/css/import-icons.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/lib/html5shiv-master/dist/html5shiv.min.js"></script>
+      <script src="assets/lib/Respond-master/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="front-page">
+    <!-- Start Body Content Wrapper -->
+    <div class="body-wrapper">
+      <!-- Start header (topbar) -->
+      <div id='divHeader'>
+
+      </div>
+      <!-- End header (topbar) -->
+      <!-- Start Login/Register Popup -->
+      <div class="login-popup container hero-header">
+        <div class="row">
+    			<div class="col-sm-12 text-center">
+    				<div class="panel panel-form">
+    					<div class="panel-heading">
+    						<div class="row">
+    							<div class="col-xs-6">
+    								<a href="#" class="active" id="login-form-link">Login</a>
+    							</div>
+    							<div class="col-xs-6">
+    								<a href="#" id="register-form-link">Register</a>
+    							</div>
+    						</div>
+    						<hr>
+    					</div>
+    					<div class="panel-body">
+    						<div class="row">
+    							<div class="col-lg-12">
+    								<form id="login-form" action="#" method="post">
+    									<div class="form-group">
+    										<input type="text" name="username" id="login-username" tabindex="1" class="form-control" placeholder="Username" value="">
+    									</div>
+    									<div class="form-group">
+    										<input type="password" name="password" id="login-password" tabindex="2" class="form-control" placeholder="Password">
+    									</div>
+    									<div class="form-group text-center">
+    										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+    										<label for="remember"> Remember Me</label>
+    									</div>
+    									<div class="form-group">
+    										<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-submit" value="Log In">
+    									</div>
+    									<div class="form-group">
+    										<div class="row">
+    											<div class="col-lg-12">
+    												<div class="text-center">
+    													<a href="#" tabindex="5" class="login-forgot-password">Forgot Password?</a>
+    												</div>
+    											</div>
+    										</div>
+    									</div>
+    								</form>
+    								<form id="register-form" action="#" method="post">
+    									<div class="form-group">
+    										<input type="text" name="username" id="register-username" tabindex="1" class="form-control" placeholder="Username" value="">
+    									</div>
+    									<div class="form-group">
+    										<input type="email" name="email" id="register-email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+    									</div>
+    									<div class="form-group">
+    										<input type="password" name="password" id="register-password" tabindex="2" class="form-control" placeholder="Password">
+    									</div>
+    									<div class="form-group">
+    										<input type="password" name="confirm-password" id="register-confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+    									</div>
+    									<div class="form-group">
+    										<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-submit" value="Register Now">
+    									</div>
+    								</form>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+      </div>
+      <!-- End Login/Register Popup -->
+      <!-- Start Hero Header -->
+      <div class="container-fluid hero-header h-video ">
+        <!-- Start Header Centralizer -->
+        <div class="header-centralizer">
+          <div class="content-centralized">
+            <!-- Start Hero Search -->
+            <div class="hero-search">
+              <form>
+                <fieldset>
+                  <input type="text" class="form-control" data-placeholder="Explore and Enjoy...">
+                  <span class="typingEffect"
+                    data-title="Explore and Enjoy//Find New Places//Discover Tasty Goodies//Do Memorable Check-ins//Go Beyond Horizon"></span>
+                </fieldset>
+                <!-- Start Search cities Toggle -->
+                <div class="search-cities-toggle"></div>
+                <!-- End Search cities Toggle -->
+                <!-- Start Search Cities -->
+                <div class="search-cities">
+                  <!-- <div class="cities-list">
+                      <a href="#" style="background-image:url('assets/images/cities/thumbs/1.jpg')" data-city-id="1"><span>Boston</span></a>
+                      <a href="#" style="background-image:url('assets/images/cities/thumbs/2.jpg')" data-city-id="2"><span>Chicago</span></a>
+                      <a href="#" style="background-image:url('assets/images/cities/thumbs/3.jpg')" data-city-id="0" class="current"><span>Miami</span></a>
+                      <a href="#" style="background-image:url('assets/images/cities/thumbs/4.jpg')" data-city-id="3"><span>New Orleans</span></a>
+                      <a href="#" style="background-image:url('assets/images/cities/thumbs/5.jpg')" data-city-id="4" class="go-more-cities"><span>More Cities</span></a>
+                      <input class="chosen-city" type="hidden" name="city" value="0">
+                    </div> -->
+                </div>
+                <!-- End Search Cities -->
+                <div class="search-submit">
+                  <input type="submit" value=" ">
+                  <i class="hero-search-icon"></i>
+                </div>
+              </form>
+            </div>
+            <!-- End Hero Search -->
+            <!-- Start Search Categories -->
+            <div class="search-categories">
+              <div class="categories">
+                <a class="icon-platter child" href="resturant.html">Restaurant</a>
+                <a class="icon-teacup child" href="coffee.html">Café</a>
+                <a class="icon-spotlights" href="activites.html">Activities</a>
+                <a class="icon-presentation" href="Cinema.html">Cinema</a>
+                <a class="icon-home" href="hotel.html">Hotel</a>
+                <a class="icon-car child" href="#">Car Dealer</a>
+                <a class="icon-first-aid" href="hospital.html">Hospital</a>
+                <a class="icon-bench-press child" href="gym.html">Gym</a>
+                <a class="icon-laundry child" href="lundry.html">Laundry</a>
+                <a class="icon-pills" href="pharmacy.html">Pharmacy</a>
+                <a class="icon-plane" href="Airline.html">Airline</a>
+                <a class="icon-haircut" href="BeautySaloon.html">Beauty Saloon</a>
+                <a class="icon-gas" href="Gasoline.html">Gasoline filling</a>
+                <a class="icon-power" href="repair.html">Electrical Repair</a>
+                <a class="icon-broom" href="House-Maid.html">House Maid</a>
+              </div>
+            </div>
+            <!-- End Search Categories -->
+          </div>
+        </div>
+      </div>
+      <!-- Ends Hero Header -->
+      <!-- Start Front Categories -->
+      <div class="container-fluid front-categories vertical">
+        <div class="row row-title">
+          <h1 class=" wow animate__animated  animate__bounceInDown"> Car Repair</h1>
+                 </div>
+               
+        <div class="row cat-itens">
+          <div class="cat-item wow animate__animated  animate__bounceInDown">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/car/1.jpg')"></div>
+            <div class="cat-icon icon-bus"></div>
+            <div class="cat-counter">1</div>
+            <a href="https://www.alshamilcenter.net">
+              <div class="cat-text">Alshamil Center</div>
+            </a>
+          </div>
+          <div class="cat-item wow animate__animated  animate__bounceInDown">
+            <div class="cat-overlay"></div>
+            <div class="cat-image" style="background-image:url('assets/images/car/2.jpg')"></div>
+            <div class="cat-icon icon-wrench"></div>
+            <div class="cat-counter">2</div>
+            <a href="https://warshasa.com/">
+              <div class="cat-text">Warshasa</div>
+            </a>
+          </div>
+          <div class="cat-item wow animate__animated  animate__bounceInDown">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/car/3.jpg')"></div>
+            <div class="cat-icon icon-bus"></div>
+            <div class="cat-counter">3</div>
+            <a href="https://www.e-workshop.net/">
+              <div class="cat-text">Four Start</div>
+            </a>
+          </div>
+          <div class="cat-item wow animate__animated  animate__bounceInDown">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/car/4.jpg')"></div>
+            <div class="cat-icon icon-wrench"></div>
+            <div class="cat-counter">4</div>
+            <a href="https://www.sainasa.com/">
+              <div class="cat-text">Warshasa Alshammari </div>
+            </a>
+          </div>
+          <div class="cat-item wow animate__animated  animate__bounceInDown">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/car/5.jpg')"></div>
+            <div class="cat-icon icon-bus"></div>
+            <div class="cat-counter">5</div>
+            <a href="https://www.ezhalha.com.sa/">
+              <div class="cat-text">Ezhalha</div>
+            </a>
+          </div>
+
+
+<div class="container-fluid front-categories vertical">
+  <div class="row row-title">
+    <h1 class=" wow animate__animated  animate__bounceInDown"> Mobile Repair</h1>
+           </div>
+         
+          <div class="row cat-itens">
+            <div class="cat-item wow animate__animated  animate__fadeInLeft">
+              <div class="cat-overlay"></div>
+              <div  class="cat-image" style="background-image:url('assets/images/car/6.jpg')"></div>
+              <div class="cat-icon icon-smartphone"></div>
+              <div class="cat-counter">6</div>
+              <a href="https://www.khalik.net/">
+                <div class="cat-text">Khalik</div>
+              </a>
+            </div>
+            <div class="cat-item  wow animate__animated  animate__fadeInLeft">
+              <div class="cat-overlay"></div>
+              <div class="cat-image" style="background-image:url('assets/images/car/7.jpg')"></div>
+              <div class="cat-icon icon-cog2"></div>
+              <div class="cat-counter">7</div>
+              <a href="http://www.fixinfinity.com.sa/site">
+                <div class="cat-text">Fix Infinity</div>
+              </a>
+            </div>
+            <div class="cat-item  wow animate__animated  animate__fadeInLeft">
+              <div class="cat-overlay"></div>
+              <div  class="cat-image" style="background-image:url('assets/images/car/8.jpg')"></div>
+              <div class="cat-icon icon-smartphone"></div>
+              <div class="cat-counter">8</div>
+              <a href="https://storesa.org/">
+                <div class="cat-text">Storesa</div>
+              </a>
+            </div>
+            <div class="cat-item  wow animate__animated  animate__fadeInLeft">
+              <div class="cat-overlay"></div>
+              <div  class="cat-image" style="background-image:url('assets/images/car/9.jpg')"></div>
+              <div class="cat-icon icon-cog2"></div>
+              <div class="cat-counter">9</div>
+              <a href="https://vixksa.com/">
+                <div class="cat-text">Vix </div>
+              </a>
+            </div>
+            <div class="cat-item  wow animate__animated  animate__fadeInLeft">
+              <div class="cat-overlay"></div>
+              <div  class="cat-image" style="background-image:url('assets/images/car/0.jpg')"></div>
+              <div class="cat-icon icon-smartphone"></div>
+              <div class="cat-counter">10</div>
+              <a href="https://nor2018.org/">
+                <div class="cat-text">Genac</div>
+              </a>
+            </div>
+          </div>
+        </div> </div>
+
+      <!-- End Front Categories -->
+      <!-- Start Trending -->
+      <div class="container-fluid " >
+        <div class="row row-title">
+          <h1 class=" wow animate__animated  animate__swing"> Electric Repair</h1>
+         
+        </div>
+        <div class="row listing">
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3 wow animate__animated  animate__bounceInDown">
+            <div class="listing-item">
+              <a href="https://www.tam-keen.com/" class="category-icon icon-power"></a>
+              <div class="listing-item-rating">4.2</div>
+              <a href="https://www.tam-keen.com/" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Tam-keen
+                    <div class="ribbon"> Start from 8AM</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/car/11.jpg" />
+              </a>
+              <div class="listing-item-data">
+               <!--   <a class="listing-item-address" href="#">
+                  3014 20th St San Francisco
+                </a> -->
+             <!--     <div class="listing-item-excerpt">
+                  The love of coffee shines all the woody ambience
+                </div> -->
+              </div>
+             <div class="listing-category-name">
+                <a href="#" style="color: gray;" > Tam-keen</a>
+              </div>  
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3 wow animate__animated  animate__bounceInDown">
+            <div class="listing-item">
+              <a href="https://slamtlrb.wixsite.com/my-site-1" class="category-icon icon-power"></a>
+              <div class="listing-item-rating">4.9</div>
+              <a href="https://slamtlrb.wixsite.com/my-site-1" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Home Maintenance
+                    <div class="ribbon">~40SR - 100SR</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/car/13.jpg" />
+              </a>
+              <div class="listing-item-data">
+                 <!-- <a class="listing-item-address" href="#">
+                  City Park, New Orleans, Louisiana 70124
+                </a> 
+                <div class="listing-item-excerpt">
+                  The New Orleans Museum of Art
+                </div> -->
+              </div>
+              <div class="listing-category-name">
+                <a href="#" style="color: gray;">Home Maintenance</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3 wow animate__animated  animate__bounceInDown">
+            <div class="listing-item">
+              <a href="https://alngma.com/electricity-in-jeddah/" class="category-icon icon-power"></a>
+              <div class="listing-item-rating">4.7</div>
+              <a href="https://alngma.com/electricity-in-jeddah/" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Alngma
+                     <div class="ribbon">Free Check</div>
+                  </div> 
+                </div>
+                <img alt="" src="assets/images/car/12.jfif" />
+              </a>
+              <div class="listing-item-data">
+                <!--  <a class="listing-item-address" href="#">
+                  1500 S. Denning Drive Winter Park, FL 32789
+                </a> -->
+                 <!-- <div class="listing-item-excerpt">
+                  48-acre urban oasis located on Orange County
+                </div> -->
+              </div>
+              <div class="listing-category-name">
+                <a href="#" style="color: gray;" >Alngma</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3 wow animate__animated  animate__bounceInDown">
+            <div class="listing-item">
+              <a href="https://gulflighthouse.com" class="category-icon icon-power"></a>
+              <div class="listing-item-rating">3.9</div>
+              <a href="https://gulflighthouse.com" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Gulf Light House
+                    <div class="ribbon">24/7</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/car/14.jpg" />
+              </a>
+              <div class="listing-item-data">
+              <!--  <a class="listing-item-address" href="#">
+                  348 Silica Rd NW Quincy, WA 98848
+                </a>
+                <div class="listing-item-excerpt">
+                  Fine Wines, Crafted with Artistry and Passion
+                </div> -->
+              </div>
+              <div class="listing-category-name">
+                <a href="#" style="color: gray;" > Gulf Light House</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+        </div>
+      </div>
+    </div>
+      <!-- End Trending -->
+      <!-- Start How It Works -->
+   
+      <!-- End How It Works -->
+      <!-- Start App -->
+  
+      <!-- End App -->
+      <!-- Start Blog Section -->
+  
+      <!-- End Blog Section -->
+      <!-- Start Footer -->
+      <div id='divFooter'>
+
+      </div>
+      <!-- End Footer -->
+    </div>
+    <!-- End Body Content Wrapper -->
+    <!-- Vimeo Hero Video Background -->
+    <script>
+      var vm_video = "141274767";
+    </script>
+    <!-- jQuery -->
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/jquery-ui.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/lib/lightbox2-master/dist/js/lightbox.min.js"></script>
+    <!-- Typing Effect -->
+    <script src="assets/lib/typed.js-master/dist/typed.min.js"></script>
+    <!-- Dragging Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery.dragscroll.js"></script>
+    <!-- Horizontal Mousewheel Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery-mousewheel-master/jquery.mousewheel.min.js"></script>
+    <!-- Listing Filter -->
+    <script src="assets/lib/bootstrap-select-master/js/bootstrap-select.js"></script>
+    <!-- To Self Hosted Hero Video -->
+    <script src="assets/lib/bideo.js-master/bideo.js"></script>
+    <!-- Map -->
+    <script src="assets/lib/Leaflet-1.0.2/build/deps.js"></script>
+  	<script src="assets/lib/Leaflet-1.0.2/debug/leaflet-include.js"></script>
+    <script src="assets/js/map-markers-samples/sampleMapSingleListingMarker.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+
+      $(function(){
+              $('#divHeader').load('header.html');
+          });
+      
+          
+          $(function(){
+              $('#divFooter').load('footer.html');
+          });
+      
+      </script>
+<script src="wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+  </body>
+</html>

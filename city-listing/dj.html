@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>City Listing - Directory Template</title>
+    <!-- Google Font(s) -->
+    <link href="https://fonts.googleapis.com/css?family=Capriola|Roboto" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Awesome Icons Font -->
+    <link href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Listing Filter -->
+    <link href="assets/lib/bootstrap-select-master/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="assets/lib/lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- Map -->
+    <link href="assets/lib/Leaflet-1.0.2/dist/leaflet.css" rel="stylesheet">
+    <!-- City Listing Icons -->
+    <link href="assets/fonts/icons/css/import-icons.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/lib/html5shiv-master/dist/html5shiv.min.js"></script>
+      <script src="assets/lib/Respond-master/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Start Body Content Wrapper -->
+    <div class="body-wrapper">
+      <!-- Start header (topbar) -->
+      <div id='divHeader'>
+
+      </div>
+      <!-- End header (topbar) -->
+      <!-- Start Search Popup -->
+      <div class="search-popup container-fluid hero-header">
+        <!-- Start Header Centralizer -->
+        <div class="header-centralizer">
+          <div class="content-centralized">
+            <!-- Start Hero Search -->
+            <div class="hero-search">
+              <form>
+                <fieldset>
+                  <input type="text" class="form-control" data-placeholder="Explore and Enjoy...">
+                  <span class="typingEffect" data-title="Explore and Enjoy//Find New Places//Discover Tasty Goodies//Do Memorable Check-ins//Go Beyond and Beyond"></span>
+                </fieldset>
+                <!-- Start Search Cities -->
+                <div class="search-cities-toggle"></div>
+                <div class="search-cities">
+                  <div class="cities-list">
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/1.jpg')" data-city-id="1"><span>Boston</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/2.jpg')" data-city-id="2"><span>Chicago</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/3.jpg')" data-city-id="0" class="current"><span>Miami</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/4.jpg')" data-city-id="3"><span>New Orleans</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/5.jpg')" data-city-id="4" class="go-more-cities"><span>More Cities</span></a>
+                    <input class="chosen-city" type="hidden" name="city" value="0">
+                  </div>
+                </div>
+                <!-- End Search Cities -->
+                <div class="search-submit">
+                  <input type="submit" value=" ">
+                  <i class="hero-search-icon"></i>
+                </div>
+              </form>
+            </div>
+            <!-- End Hero Search -->
+            <!-- Start Search Categories -->
+            <div class="search-categories">
+              <div class="categories">
+                <a class="icon-platter child" href="#">Restaurant</a>
+                <a class="icon-teacup child" href="#">Café</a>
+                <a class="icon-moon" href="#">Nightlife</a>
+                <a class="icon-landscape" href="#">Outdoor</a>
+                <a class="icon-home" href="#">Lodging</a>
+                <a class="icon-car child" href="#">Car Dealer</a>
+                <a class="icon-hanger child" href="#">Clothing</a>
+                <a class="icon-bench-press child" href="#">Gim</a>
+                <a class="icon-saw child" href="#">Home Service</a>
+                <a class="icon-laundry child" href="#">Laundry</a>
+                <a class="icon-bag-dollar child" href="#">Bank</a>
+                <a class="icon-palette child" href="#">Art Gallery</a>
+                <a class="icon-library child" href="#">Bookstore</a>
+                <a class="icon-chair child" href="#">Furniture</a>
+                <a class="icon-receipt" href="#">Coupons</a>
+                <a class="icon-lan2" href="#">Online Order</a>
+                <a class="icon-paw" href="#">Pets Friendly</a>
+                <a class="icon-wheelchair" href="#">Accessible</a>
+                <a class="icon-wifi" href="#">Wi-Fi</a>
+                <a class="icon-city" href="#">More Options</a>
+              </div>
+            </div>
+            <!-- End Search Categories -->
+          </div>
+        </div>
+      </div>
+      <!-- End Search Popup -->
+      <!-- Start Login/Register Popup -->
+     
+      <!-- End Login/Register Popup -->
+      <!-- Start Page Header -->
+            <div class="container-fluid pg-header" style="background-image: url(assets/images/categories/res.jpg);">
+        <div class="breadcrumbs text-left">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">DJ</a></li>
+          </ul>
+        </div>
+        <div class="pg-header-content">
+          <h1 class="pg-title">
+           <!-- Hotel Not Hotel : Unique Stay in Amsterdam -->
+          </h1>
+        </div>
+        <div class="pg-header-icon icon-platter"></div>
+      </div>
+      <!-- End Page Header -->
+      <!-- Start Single Blog Content -->
+      <div class="container-fluid how color-bg">
+        <div class="row">
+          <!-- Start Single Content -->
+          
+      <!-- End Single Blog Content -->
+      <!-- Start Related Articles -->
+      <div class="container-fluid">
+        <br> <br>
+        <h2>Choose Your Favorite Songer</h2>
+        <div class="separator-medium"></div>
+        <div class="row listing white squared">
+          <!-- Start Blog Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <!--  <a href="#" class="category-icon icon-news"></a> -->
+              <div class="listing-item-date">
+                <!--  <div class="day">12</div>
+                <div class="month">Feb</div> -->
+              </div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Aseel Hamim
+                  </div>
+                </div>
+                <img alt="" src="assets/images/dj/8.jfif" />
+              </a>
+              <div class="listing-item-data">
+                <div class="listing-item-excerpt">
+                  A concert by Aseel Hamim , which will be held in the Jeddah Superdome.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="https://www.google.com/maps/dir/21.6045974,39.1129248/%D8%A8%D9%8A%D8%A8%D9%84%D9%88%D8%B3%E2%80%AD%E2%80%AD/@21.5670394,39.1009028,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x15c3cff465a39be1:0x8548192939d8f044!2m2!1d39.1583464!2d21.5287171"> <b>Visit</b></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Item Col -->
+          <!-- Start Blog Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+             <!--   <a href="#" class="category-icon icon-paperclip"></a> -->
+              <div class="listing-item-date">
+              <!--    <div class="day">07</div>
+                <div class="month">Feb</div> -->
+              </div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Hussain Al Jasmi
+                  </div>
+                </div>
+                <img alt="" src="assets/images/dj/4.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <div class="listing-item-excerpt">
+                  A concert by  Hussain Al Jasmi , which will be held in the Jeddah Superdome.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="https://www.google.com/maps/dir//%D9%85%D8%B7%D8%B9%D9%85+%D8%AA%D9%88%D9%83%D9%8A+%D8%AC%D8%AF%D8%A9%E2%80%AD/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x15c3dac5f3aaeb69:0x9bae544e9a659fd3?sa=X&hl=en&ved=2ahUKEwi-_O7nwqbzAhVbh_0HHRxFDPAQ9Rd6BAhlEAU"> <b>Visit</b></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Item Col -->
+          <!-- Start Blog Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+             <!--   <a href="#" class="category-icon icon-reminder"></a> -->
+              <div class="listing-item-date">
+             <!--     <div class="day">02</div>
+                <div class="month">Feb</div> -->
+              </div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Nancy Ajram
+                  </div>
+                </div>
+                <img alt="" src="assets/images/dj/7.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <div class="listing-item-excerpt">
+                  A concert by Nancy Ajram , which will be held in the Jeddah Superdome.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="https://www.google.com/maps/dir//%D9%85%D8%B7%D8%B9%D9%85+%D8%B3%D8%A7%D9%86+%D9%83%D8%A7%D8%B1%D9%84%D9%88+%D8%AC%D8%AF%D8%A9%E2%80%AD/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x15c3db1e2698ff0d:0x1c5a40b5782a4397?sa=X&hl=en&ved=2ahUKEwiRzJOnx6bzAhXkN-wKHSZMD3cQ9Rd6BAhZEAU"> <b>Visit</b></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Item Col -->
+          <!-- Start Blog Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+             <!--   <a href="#" class="category-icon icon-lamp"></a> -->
+              <div class="listing-item-date">
+              <!--    <div class="day">23</div>
+                <div class="month">Jan</div> -->
+              </div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Mohamed Hamaki 
+                  </div>
+                </div>
+                <img alt="" src="assets/images/dj/6.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <div class="listing-item-excerpt">
+                  Do not miss the concert of Mohamed Hamaki , which will be held in Jeddah Superdome. 
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="https://www.google.com/maps/dir/21.6045974,39.1129248/%D9%85%D8%B7%D8%B9%D9%85+%D9%86%D8%A7%D9%88%D9%86+%D9%84%D8%A7%D9%88%D9%86%D8%AC+%D8%AC%D8%AF%D8%A9%E2%80%AD%E2%80%AD/@21.5883322,39.1101663,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x15c3dbc34622630d:0xc90b5f985efca7b2!2m2!1d39.1439341!2d21.5773368?hl=en"> <b>Visit</b></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Item Col -->
+            <!-- Start Blog Item Col -->
+            <div class="col-sm-3">
+              <div class="listing-item">
+               <!--   <a href="#" class="category-icon icon-reminder"></a> -->
+                <div class="listing-item-date">
+               <!--     <div class="day">02</div>
+                  <div class="month">Feb</div> -->
+                </div>
+                <a href="#" class="listing-item-link">
+                  <div class="listing-item-title-centralizer">
+                    <div class="listing-item-title">
+                      George Wassouf's 
+                    </div>
+                  </div>
+                  <img alt="" src="assets/images/dj/5.jpg" />
+                </a>
+                <div class="listing-item-data">
+                  <div class="listing-item-excerpt">
+                    For the first time in the Kingdom, a concert will be held by George Wassouf, which will be held in Jeddah Superdome.
+                  </div>
+                </div>
+                <div class="listing-category-name">
+                  <a href="https://www.google.com/maps/dir/21.6192451,39.1271036/%D9%85%D8%B7%D8%B9%D9%85+%D8%B3%D9%84%D8%B7%D8%A7%D9%86+%D8%B3%D8%AA%D9%8A%D9%83+%D9%87%D8%A7%D9%88%D8%B3%E2%80%AD%E2%80%AD/@21.5912902,39.1070984,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x15c3daa62814ba5d:0x7213e325b36e3d28!2m2!1d39.1511167!2d21.5580207"> <b>Visit</b></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Blog Item Col -->
+              <!-- Start Blog Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+             <!--   <a href="#" class="category-icon icon-reminder"></a> -->
+              <div class="listing-item-date">
+             <!--     <div class="day">02</div>
+                <div class="month">Feb</div> -->
+              </div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Majed Al Mohandes 
+                  </div>
+                </div>
+                <img alt="" src="assets/images/dj/3.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <div class="listing-item-excerpt">
+                  A concert by Majed Al Mohandes  , which will be held in the Jeddah Superdome.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="https://www.google.com/maps/dir/21.6192451,39.1271036/%D8%A7%D8%BA%D8%A7%D9%81%D9%8A+%D8%AC%D8%AF%D8%A9%E2%80%AD%E2%80%AD/@21.5855927,39.1082838,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x15c3dab1f096668b:0x23fe72adfd83514c!2m2!1d39.1432667!2d21.5547956?hl=en"> <b>Visit</b></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Item Col -->
+            <!-- Start Blog Item Col -->
+            <div class="col-sm-3">
+              <div class="listing-item">
+               <!--   <a href="#" class="category-icon icon-reminder"></a> -->
+                <div class="listing-item-date">
+               <!--     <div class="day">02</div>
+                  <div class="month">Feb</div> -->
+                </div>
+                <a href="#" class="listing-item-link">
+                  <div class="listing-item-title-centralizer">
+                    <div class="listing-item-title">
+                    Mohammed Abdo 
+                              </div>
+                  </div>
+                  <img alt="" src="assets/images/dj/2.jpg" />
+                </a>
+                <div class="listing-item-data">
+                  <div class="listing-item-excerpt">
+                    A concert by   Mohammed Abdo , which will be held in the Jeddah Superdome.
+                  </div>
+                </div>
+                <div class="listing-category-name">
+                  <a href="https://www.google.com/maps/dir//%D9%85%D8%B7%D8%B9%D9%85+%D8%A7%D9%84%D8%B1%D9%8A%D8%AA%D8%B2+%D9%83%D8%A7%D8%B1%D9%84%D8%AA%D9%88%D9%86+%D8%AC%D8%AF%D8%A9%E2%80%AD/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x15c3cf0b5b7cc159:0x58dfb032cdb4208?sa=X&hl=en&ved=2ahUKEwiYm5vG1abzAhXTu6QKHcFjBzIQ9Rd6BAgTEAU"> <b>Visit</b></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Blog Item Col -->
+              <!-- Start Blog Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+             <!--   <a href="#" class="category-icon icon-reminder"></a> -->
+              <div class="listing-item-date">
+             <!--     <div class="day">02</div>
+                <div class="month">Feb</div> -->
+              </div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Amr Diab
+                  </div>
+                </div>
+                <img alt="" src="assets/images/dj/1.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <div class="listing-item-excerpt">
+                  A concert by   Amr Diab , which will be held in the Jeddah Superdome.
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="https://www.google.com/maps/dir//%D9%85%D8%A7%D8%AA%D9%8A%D9%86%D9%8A%D9%88%D9%86%E2%80%AD/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x15c3db1e3b55588b:0xd70e0c84b1a737ee?sa=X&ved=2ahUKEwicnZL31abzAhXS6qQKHV5nA2kQ9Rd6BAhPEAU"> <b>Visit</b></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Item Col -->
+          
+        </div>
+      </div>
+       </div>
+      </div>
+      
+      <!-- End Related Article -->
+
+
+
+      <!-- Start Footer -->
+      <div id='divFooter'>
+
+      </div>
+      <!-- End Footer -->
+    </div>
+    <!-- End Body Content Wrapper -->
+    <!-- jQuery -->
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/jquery-ui.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/lib/lightbox2-master/dist/js/lightbox.min.js"></script>
+    <!-- Typing Effect -->
+    <script src="assets/lib/typed.js-master/dist/typed.min.js"></script>
+    <!-- Dragging Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery.dragscroll.js"></script>
+    <!-- Horizontal Mousewheel Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery-mousewheel-master/jquery.mousewheel.min.js"></script>
+    <!-- Listing Filter -->
+    <script src="assets/lib/bootstrap-select-master/js/bootstrap-select.js"></script>
+    <!-- To Self Hosted Hero Video -->
+    <script src="assets/lib/bideo.js-master/bideo.js"></script>
+    <!-- Map -->
+    <script src="assets/lib/Leaflet-1.0.2/build/deps.js"></script>
+  	<script src="assets/lib/Leaflet-1.0.2/debug/leaflet-include.js"></script>
+    <script src="assets/js/map-markers-samples/sampleMapSingleListingMarker.js"></script>
+    <!-- Main Javascript -->
+    <script src="assets/js/main.js"></script>
+
+<script>
+
+$(function(){
+        $('#divHeader').load('header.html');
+    });
+
+    
+    $(function(){
+        $('#divFooter').load('footer.html');
+    });
+
+</script>
+
+  </body>
+</html>

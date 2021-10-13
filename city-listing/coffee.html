@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>Community Hub - Coffee</title>
+    <!-- Google Font(s) -->
+    <link href="https://fonts.googleapis.com/css?family=Capriola|Roboto" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Awesome Icons Font -->
+    <link href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Listing Filter -->
+    <link href="assets/lib/bootstrap-select-master/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="assets/lib/lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- Map -->
+    <link href="assets/lib/Leaflet-1.0.2/dist/leaflet.css" rel="stylesheet">
+    <!-- City Listing Icons -->
+    <link href="assets/fonts/icons/css/import-icons.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/lib/html5shiv-master/dist/html5shiv.min.js"></script>
+      <script src="assets/lib/Respond-master/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Start Body Content Wrapper -->
+    <div class="body-wrapper">
+      <!-- Start header (topbar) -->
+      <div id='divHeader'>
+
+      </div>
+      <!-- End header (topbar) -->
+      <!-- Start Search Popup -->
+      <div class="search-popup container-fluid hero-header">
+        <!-- Start Header Centralizer -->
+        <div class="header-centralizer">
+          <div class="content-centralized">
+            <!-- Start Hero Search -->
+            <div class="hero-search">
+              <form>
+                <fieldset>
+                  <input type="text" class="form-control" data-placeholder="Explore and Enjoy...">
+                  <span class="typingEffect" data-title="Explore and Enjoy//Find New Places//Discover Tasty Goodies//Do Memorable Check-ins//Go Beyond and Beyond"></span>
+                </fieldset>
+                <!-- Start Search Cities -->
+                <div class="search-cities-toggle"></div>
+                <div class="search-cities">
+                  <div class="cities-list">
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/1.jpg')" data-city-id="1"><span>Boston</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/2.jpg')" data-city-id="2"><span>Chicago</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/3.jpg')" data-city-id="0" class="current"><span>Miami</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/4.jpg')" data-city-id="3"><span>New Orleans</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/5.jpg')" data-city-id="4" class="go-more-cities"><span>More Cities</span></a>
+                    <input class="chosen-city" type="hidden" name="city" value="0">
+                  </div>
+                </div>
+                <!-- End Search Cities -->
+                <div class="search-submit">
+                  <input type="submit" value=" ">
+                  <i class="hero-search-icon"></i>
+                </div>
+              </form>
+            </div>
+            <!-- End Hero Search -->
+            <!-- Start Search Categories -->
+            <div class="search-categories">
+              <div class="categories">
+                <a class="icon-platter child" href="#">Restaurant</a>
+                <a class="icon-teacup child" href="#">Café</a>
+                <a class="icon-moon" href="#">Nightlife</a>
+                <a class="icon-landscape" href="#">Outdoor</a>
+                <a class="icon-home" href="#">Lodging</a>
+                <a class="icon-car child" href="#">Car Dealer</a>
+                <a class="icon-hanger child" href="#">Clothing</a>
+                <a class="icon-bench-press child" href="#">Gim</a>
+                <a class="icon-saw child" href="#">Home Service</a>
+                <a class="icon-laundry child" href="#">Laundry</a>
+                <a class="icon-bag-dollar child" href="#">Bank</a>
+                <a class="icon-palette child" href="#">Art Gallery</a>
+                <a class="icon-library child" href="#">Bookstore</a>
+                <a class="icon-chair child" href="#">Furniture</a>
+                <a class="icon-receipt" href="#">Coupons</a>
+                <a class="icon-lan2" href="#">Online Order</a>
+                <a class="icon-paw" href="#">Pets Friendly</a>
+                <a class="icon-wheelchair" href="#">Accessible</a>
+                <a class="icon-wifi" href="#">Wi-Fi</a>
+                <a class="icon-city" href="#">More Options</a>
+              </div>
+            </div>
+            <!-- End Search Categories -->
+          </div>
+        </div>
+      </div>
+      <!-- End Search Popup -->
+      <!-- Start Login/Register Popup -->
+     
+      <!-- End Login/Register Popup -->
+      <!-- Start Page Header -->
+     
+            <div class="container-fluid pg-header" style="background-image: url(assets/images/categories/23.jpg);">
+              
+        <div class="breadcrumbs text-left">
+          
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Caffee</a></li>
+          </ul>
+        </div>
+        
+        <div class="pg-header-content">
+          <h1 class="pg-title">
+
+
+            <div class="container-fluid hero-header h-video ">
+              <!-- Start Header Centralizer -->
+              <div class="header-centralizer">
+                <div class="content-centralized">
+                  <!-- Start Hero Search -->
+                  <div class="hero-search">
+                    <form>
+                      <fieldset>
+                        <input type="text" class="form-control" data-placeholder="Explore and Enjoy...">
+                        <span class="typingEffect"
+                          data-title="Explore and Enjoy//Find New Places//Discover Tasty Goodies//Do Memorable Check-ins//Go Beyond Horizon"></span>
+                      </fieldset>
+                      <!-- Start Search cities Toggle -->
+                      <div class="search-cities-toggle"></div>
+                      <!-- End Search cities Toggle -->
+                      <!-- Start Search Cities -->
+                      <div class="search-cities">
+                        <!-- <div class="cities-list">
+                            <a href="#" style="background-image:url('assets/images/cities/thumbs/1.jpg')" data-city-id="1"><span>Boston</span></a>
+                            <a href="#" style="background-image:url('assets/images/cities/thumbs/2.jpg')" data-city-id="2"><span>Chicago</span></a>
+                            <a href="#" style="background-image:url('assets/images/cities/thumbs/3.jpg')" data-city-id="0" class="current"><span>Miami</span></a>
+                            <a href="#" style="background-image:url('assets/images/cities/thumbs/4.jpg')" data-city-id="3"><span>New Orleans</span></a>
+                            <a href="#" style="background-image:url('assets/images/cities/thumbs/5.jpg')" data-city-id="4" class="go-more-cities"><span>More Cities</span></a>
+                            <input class="chosen-city" type="hidden" name="city" value="0">
+                          </div> -->
+                      </div>
+                      <!-- End Search Cities -->
+                      <div class="search-submit">
+                        <input type="submit" value=" ">
+                        <i class="hero-search-icon"></i>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- End Hero Search -->
+                  <!-- Start Search Categories -->
+                  <div class="search-categories">
+                    <div class="categories">
+                      <a class="icon-platter child" href="resturant.html">Restaurant</a>
+                      <a class="icon-teacup child" href="coffee.html">Café</a>
+                      <a class="icon-spotlights" href="activites.html">Activities</a>
+                      <a class="icon-presentation" href="Cinema.html">Cinema</a>
+                      <a class="icon-home" href="hotel.html">Hotel</a>
+                      <a class="icon-car child" href="#">Car Dealer</a>
+                      <a class="icon-first-aid" href="hospital.html">Hospital</a>
+                      <a class="icon-bench-press child" href="gym.html">Gym</a>
+                      <a class="icon-laundry child" href="lundry.html">Laundry</a>
+                      <a class="icon-pills" href="pharmacy.html">Pharmacy</a>
+                      <a class="icon-plane" href="Airline.html">Airline</a>
+                      <a class="icon-haircut" href="BeautySaloon.html">Beauty Saloon</a>
+                      <a class="icon-gas" href="Gasoline.html">Gasoline filling</a>
+                      <a class="icon-power" href="repair.html">Electrical Repair</a>
+                      <a class="icon-broom" href="House-Maid.html">House Maid</a>
+                    </div>
+                  </div>
+                  <!-- End Search Categories -->
+                </div>
+              </div>
+            </div>
+           <!-- Hotel Not Hotel : Unique Stay in Amsterdam -->
+          </h1>
+        </div>
+        <div class="pg-header-icon icon-teacup"></div>
+      </div>
+      <!-- End Page Header -->
+      <!-- Start Single Blog Content -->
+      <div class="container-fluid how color-bg">
+        <div class="row">
+          <!-- Start Single Content -->
+          
+      <!-- End Single Blog Content -->
+      <!-- Start Related Articles -->
+      <div class="background1" style="background-image:url(assets\images\caffee\8.jpg);">
+      <div class="container-fluid">
+        <br> <br>
+          <h1 class=" wow animate__animated  animate__rotateInDownLeft">Feel The Taste Of Unique</h1>
+          <h4  class=" wow animate__animated  animate__rotateInDownLeft">Looking for high quality</h4>
+       
+        <div class="separator-medium"></div>
+        <div class="row listing white squared">
+          <!-- Start Blog Item Col -->
+          <div class="col-sm-3  wow animate__animated animate__zoomInUp">
+            <div class="listing-item">
+              <!--  <a href="#" class="category-icon icon-news"></a> -->
+              <div class="listing-item-date">
+                <!--  <div class="day">12</div>
+                <div class="month">Feb</div> -->
+              </div>
+              <a href="https://ksa.patchi.com/ar/" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Patchi
+                  </div>
+                </div>
+                <img alt="" src="assets\images\caffee\1.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <div class="listing-item-excerpt">
+                  Le Prestige، King Abdul Aziz Rd, Ash Shati, Jeddah
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="https://www.google.com/maps/dir/21.6192451,39.1271036/%D8%A8%D8%A7%D8%AA%D8%B4%D9%8A+%D9%83%D8%A7%D9%81%D9%8A%D9%87+%D8%AC%D8%AF%D8%A9%E2%80%AD%E2%80%AD/@21.5959897,39.0864627,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x15c3db8e32b71603:0x452bae09dd160e70!2m2!1d39.1252426!2d21.5655167?hl=en"> <b>Visit</b></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Item Col -->
+          <!-- Start Blog Item Col -->
+          <div class="col-sm-3 wow animate__animated animate__zoomInUp">
+            <div class="listing-item">
+             <!--   <a href="#" class="category-icon icon-paperclip"></a> -->
+              <div class="listing-item-date">
+              <!--    <div class="day">07</div>
+                <div class="month">Feb</div> -->
+              </div>
+              <a href="https://www.instagram.com/laderachksa/" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Läderach
+                  </div>
+                </div>
+                <img alt="" src="assets\images\caffee\2.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <div class="listing-item-excerpt">
+                  Ash Shati, Jeddah 21146
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="https://www.google.com/maps/dir/21.6253609,39.1231357/%D9%84%D8%A7%D8%AF%D9%8A%D8%B1%D8%A7%D8%AE+%D9%83%D8%A7%D9%81%D9%8A%D9%87+%D8%AC%D8%AF%D8%A9%E2%80%AD%E2%80%AD/@21.6424089,39.1019012,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x15c3dbdd0512aced:0x4b5a6af1f7a19de9!2m2!1d39.1113124!2d21.6292162?hl=en"> <b>Visit</b></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Item Col -->
+          <!-- Start Blog Item Col -->
+          <div class="col-sm-3 wow animate__animated animate__zoomInUp">
+            <div class="listing-item">
+             <!--   <a href="#" class="category-icon icon-reminder"></a> -->
+              <div class="listing-item-date">
+             <!--     <div class="day">02</div>
+                <div class="month">Feb</div> -->
+              </div>
+              <a href="https://godiva.com.sa/" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Godiva 
+                  </div>
+                </div>
+                <img alt="" src="assets\images\caffee\3.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <div class="listing-item-excerpt">
+                  Al Andalus, Roshana Mall, Ground Floor, Prince Mohammed Bin Abdulaziz St, ِ, Jeddah
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="https://www.google.com/search?q=%D9%83%D9%88%D9%81%D9%8A%20%D8%AC%D9%88%D8%AF%D9%8A%D9%81%D8%A7%20%D8%AC%D8%AF%D8%A9&bih=890&biw=1920&rlz=1C1OKWM_enSA969SA969&hl=en&sxsrf=AOaemvLb7fRsiwQ_pDtMr2LYfEzddq_D4Q:1633253523630&ei=h3hZYcCLIIy2kwXJ9KroCg&ved=2ahUKEwig7-nA963zAhVF-aQKHU6UAHcQvS56BAgKEFM&uact=5&oq=%D9%83%D9%88%D9%81%D9%8A+%D8%AC%D9%88%D8%AF%D9%8A%D9%81%D8%A7+%D8%AC%D8%AF%D8%A9&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BggjECcQEzoECCMQJzoLCAAQgAQQsQMQgwE6BQgAEIAEOgUILhCABDoLCC4QgAQQxwEQowI6CwguEIAEEMcBEK8BOgUIABDLAToLCC4QxwEQrwEQywFKBAhBGABQ3StYq1Rgz1ZoAHACeACAAa0BiAGaEJIBBDAuMTWYAQCgAQHAAQE&sclient=gws-wiz&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u1!2m2!1m1!1e1!1m4!1u1!2m2!1m1!1e2!2m1!1e2!2m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:9&tbm=lcl&rflfq=1&num=10&rldimm=326411831673567925&lqi=ChzZg9mI2YHZiiDYrNmI2K_ZitmB2Kcg2KzYr9ipSJW6qtqQq4CACFooEAAYARgCIhzZg9mI2YHZiiDYrNmI2K_ZitmB2Kcg2KzYr9ipKgIIApIBDmNob2NvbGF0ZV9zaG9wmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJwTW1SWU5FSjNFQUWqARsKCS9tLzAydnFmbRABKgwiCNmD2YjZgdmKKDY&phdesc=OVhsh7hBJyI&rlst=f#rlfi=hd:;si:326411831673567925,l,ChzZg9mI2YHZiiDYrNmI2K_ZitmB2Kcg2KzYr9ipSJW6qtqQq4CACFooEAAYARgCIhzZg9mI2YHZiiDYrNmI2K_ZitmB2Kcg2KzYr9ipKgIIApIBDmNob2NvbGF0ZV9zaG9wmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJwTW1SWU5FSjNFQUWqARsKCS9tLzAydnFmbRABKgwiCNmD2YjZgdmKKDY,y,OVhsh7hBJyI;mv:[[21.660124900000003,39.148167],[21.5417322,39.108683]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u1!2m2!1m1!1e1!1m4!1u1!2m2!1m1!1e2!2m1!1e2!2m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:9"> <b>Visit</b></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Item Col -->
+          <!-- Start Blog Item Col -->
+          <div class="col-sm-3 wow animate__animated animate__zoomInUp">
+            <div class="listing-item">
+             <!--   <a href="#" class="category-icon icon-lamp"></a> -->
+              <div class="listing-item-date">
+              <!--    <div class="day">23</div>
+                <div class="month">Jan</div> -->
+              </div>
+              <a href="https://bateel.com/en" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Bateel
+                  </div>
+                </div>
+                <img alt="" src="assets\images\caffee\4.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <div class="listing-item-excerpt">
+                  Le Prestige Mall، King Abdulaziz Branch Rd, Ash Shati, Jeddah
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="https://www.google.com/search?q=%D8%AC%D8%AF%D8%A9%20%D9%83%D9%88%D9%81%D9%8A%20%D8%A8%D8%AA%D9%8A%D9%84&source=lmns&bih=947&biw=1920&rlz=1C1OKWM_enSA969SA969&hl=en&sa=X&ved=2ahUKEwjK9bXu-a3zAhUauKQKHfMeAlMQvS56BAgQECE&tbs=lf:1,lf_ui:3&tbm=lcl&sxsrf=AOaemvLPriV1QJAyXZXPQK5z7Zr0ZH7Pww:1633254156114&rflfq=1&num=10&rldimm=8147639749784596911&lqi=ChjYrNiv2Kkg2YPZiNmB2Yog2KjYqtmK2YRIzeyatZmrgIAIWiQQARACGAAYARgCIhjYrNiv2Kkg2YPZiNmB2Yog2KjYqtmK2YSSAQRjYWZlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU54Ym5GeU5VaDNFQUWqARkQASoVIhHZg9mI2YHZiiDYqNiq2YrZhCg2&rlst=f#rlfi=hd:;si:12466203999726660444,l,ChjYrNiv2Kkg2YPZiNmB2Yog2KjYqtmK2YRI3rrK5b6ugIAIWiQQARACGAAYARgCIhjYrNiv2Kkg2YPZiNmB2Yog2KjYqtmK2YSSAQRjYWZlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJ4YTJKTU1XTm5FQUWqARkQASoVIhHZg9mI2YHZiiDYqNiq2YrZhCg2;mv:[[21.5710876,39.2590692],[21.529498399999998,39.112702299999995]]"> <b>Visit</b></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Item Col -->
+            <!-- Start Blog Item Col -->
+            <div class="col-sm-3 wow animate__animated animate__zoomInUp">
+              <div class="listing-item">
+               <!--   <a href="#" class="category-icon icon-reminder"></a> -->
+                <div class="listing-item-date">
+               <!--     <div class="day">02</div>
+                  <div class="month">Feb</div> -->
+                </div>
+                <a href="https://www.ritzcarlton.com/en/hotels/saudi-arabia/jeddah/dining/karamel-lounge?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" class="listing-item-link">
+                  <div class="listing-item-title-centralizer">
+                    <div class="listing-item-title">
+                      Karamel Lounge
+                    </div>
+                  </div>
+                  <img alt="" src="assets\images\caffee\5.jpg" />
+                </a>
+                <div class="listing-item-data">
+                  <div class="listing-item-excerpt">
+                    Al Hamra District، Jeddah 23321
+                  </div>
+                </div>
+                <div class="listing-category-name">
+                  <a href="https://www.google.com/search?q=%D9%83%D9%88%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%AA%D8%B2&bih=890&biw=1920&rlz=1C1OKWM_enSA969SA969&hl=en&sxsrf=AOaemvLEu3hFQoRgLnpBWCF7xFDHnNws4A:1633254783565&ei=dH1ZYZ_XAaPisAftyK-IDg&ved=2ahUKEwiFk86Z_K3zAhWnMewKHXe8AVgQvS56BAgRECE&uact=5&oq=%D9%83%D9%88%D9%81%D9%8A+%D8%A7%D9%84%D8%B1%D9%8A%D8%AA%D8%B2&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BAgjECc6BggjECcQEzoLCAAQgAQQsQMQgwE6BQgAEIAEOgUILhCABDoLCC4QgAQQxwEQowI6CwguEIAEEMcBEK8BOgsILhDHARCvARDLAToHCAAQChDLAUoECEEYAFCaFVj5T2DGUmgAcAJ4AIABugGIAfENkgEEMC4xMZgBAKABAcABAQ&sclient=gws-wiz&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4&tbm=lcl&rflfq=1&num=10&rldimm=16681419967388197723&lqi=ChXZg9mI2YHZiiDYp9mE2LHZitiq2LIiA4gBAUiDyYKfna2AgAhaGxAAEAEiFdmD2YjZgdmKINin2YTYsdmK2KrYspIBCnJlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnBkR0UzT1RCUlJSQUKqARsKCS9tLzAydnFmbRABKgwiCNmD2YjZgdmKKDY&rlst=f#rlfi=hd:;si:16681419967388197723,l,ChXZg9mI2YHZiiDYp9mE2LHZitiq2LIiA4gBAUiDyYKfna2AgAhaGxAAEAEiFdmD2YjZgdmKINin2YTYsdmK2KrYspIBCnJlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnBkR0UzT1RCUlJSQUKqARsKCS9tLzAydnFmbRABKgwiCNmD2YjZgdmKKDY;mv:[[29.7598476,51.2216445],[21.0503175,38.4684867]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4"> <b>Visit</b></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Blog Item Col -->
+              <!-- Start Blog Item Col -->
+          <div class="col-sm-3 wow animate__animated animate__zoomInUp">
+            <div class="listing-item">
+             <!--   <a href="#" class="category-icon icon-reminder"></a> -->
+              <div class="listing-item-date">
+             <!--     <div class="day">02</div>
+                <div class="month">Feb</div> -->
+              </div>
+              <a href="https://www.myazu.com" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    MYAZU
+                  </div>
+                </div>
+                <img alt="" src="assets\images\caffee\6.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <div class="listing-item-excerpt">
+                  AL BASATEEN MALL, PRINCE MOHAMMED BIN ABDULAZIZ STREET, AL RAWDAH DISTRICT. JEDDAH, 23431 KSA
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="https://www.google.com/maps/dir//%D9%85%D9%8A%D8%A7%D8%B2%D9%88%E2%80%AD/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x15c3daaa5d22bbaf:0x25bf25dea672e719?sa=X&hl=en&ved=2ahUKEwjF2tHa_a3zAhUDyKQKHZcHBAAQ9Rd6BAh7EAU"> <b>Visit</b></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Item Col -->
+            <!-- Start Blog Item Col -->
+            <div class="col-sm-3 wow animate__animated animate__zoomInUp">
+              <div class="listing-item">
+               <!--   <a href="#" class="category-icon icon-reminder"></a> -->
+                <div class="listing-item-date">
+               <!--     <div class="day">02</div>
+                  <div class="month">Feb</div> -->
+                </div>
+                <a href="https://www.timhortons.com" class="listing-item-link">
+                  <div class="listing-item-title-centralizer">
+                    <div class="listing-item-title">
+                      Tim Hortons
+                    </div>
+                  </div>
+                  <img alt="" src="assets\images\caffee\7.jpg" />
+                </a>
+                <div class="listing-item-data">
+                  <div class="listing-item-excerpt">
+                    An Nuzhah, 1st floor, Gate No.6, Mall of Arabia
+                  </div>
+                </div>
+                <div class="listing-category-name">
+                  <a href="https://www.google.com/search?q=%D8%AA%D9%8A%D9%85%20%D9%87%D9%88%D8%B1%D8%AA%D9%86%D8%B2%20%D8%AC%D8%AF%D8%A9&rlz=1C1OKWM_enSA969SA969&oq=%D8%AA%D9%8A%D9%85&aqs=chrome.0.0i20i263i512j69i57j0i512l4j46i512l4.1948j0j9&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:4&tbm=lcl&sxsrf=AOaemvJMyuWNn-UGL90zTwObyu5FLxHTdg:1633255351218&rflfq=1&num=10&rldimm=6575686919086854561&lqi=ChrYqtmK2YUg2YfZiNix2KrZhtiyINis2K_YqSIDiAEBSKG1y9r_rICACFomEAAQARgAGAEYAiIa2KrZitmFINmH2YjYsdiq2YbYsiDYrNiv2KmSAQRjYWZlmgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJwYms1eGJ6Rm5SUkFCqgEbEAEqFyIT2KrZitmFINmH2YjYsdiq2YbYsig2&ved=2ahUKEwjoiqWo_q3zAhVF-qQKHSHtBLQQvS56BAgPECE&rlst=f#rlfi=hd:;si:6575686919086854561,l,ChrYqtmK2YUg2YfZiNix2KrZhtiyINis2K_YqSIDiAEBSKG1y9r_rICACFomEAAQARgAGAEYAiIa2KrZitmFINmH2YjYsdiq2YbYsiDYrNiv2KmSAQRjYWZlmgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJwYms1eGJ6Rm5SUkFCqgEbEAEqFyIT2KrZitmFINmH2YjYsdiq2YbYsig2;mv:[[21.784624299999997,39.2903741],[21.4184895,39.0977225]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4"> <b>Visit</b></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Blog Item Col -->
+              <!-- Start Blog Item Col -->
+          <div class="col-sm-3 wow animate__animated animate__zoomInUp">
+            <div class="listing-item">
+             <!--   <a href="#" class="category-icon icon-reminder"></a> -->
+              <div class="listing-item-date">
+             <!--     <div class="day">02</div>
+                <div class="month">Feb</div> -->
+              </div>
+              <a href="https://www.instagram.com/fauchonriyadh" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    Fauchon
+                  </div>
+                </div>
+                <img alt="" src="assets\images\caffee\8.jpg" />
+              </a>
+              <div class="listing-item-data">
+                <div class="listing-item-excerpt">
+                  Al Andalus, Jeddah
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="https://www.google.com/maps/place/%D9%81%D9%88%D8%B4%D9%88%D9%86+%D8%A8%D8%A7%D8%B1%D9%8A%D8%B3%E2%80%AD/@21.5496972,39.1540736,15z/data=!4m5!3m4!1s0x0:0xf75f4f2a5a60ae48!8m2!3d21.5496974!4d39.1540744?hl=en"> <b>Visit</b></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Item Col -->
+          
+        </div>
+      </div>
+       </div>
+      </div>
+      </div>
+      <!-- End Related Article -->
+
+
+
+      <!-- Start Footer -->
+      <div id='divFooter'>
+
+      </div>
+      <!-- End Footer -->
+    </div>
+    <!-- End Body Content Wrapper -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/jquery-ui.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/lib/lightbox2-master/dist/js/lightbox.min.js"></script>
+    <!-- Typing Effect -->
+    <script src="assets/lib/typed.js-master/dist/typed.min.js"></script>
+    <!-- Dragging Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery.dragscroll.js"></script>
+    <!-- Horizontal Mousewheel Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery-mousewheel-master/jquery.mousewheel.min.js"></script>
+    <!-- Listing Filter -->
+    <script src="assets/lib/bootstrap-select-master/js/bootstrap-select.js"></script>
+    <!-- To Self Hosted Hero Video -->
+    <script src="assets/lib/bideo.js-master/bideo.js"></script>
+    <!-- Map -->
+    <script src="assets/lib/Leaflet-1.0.2/build/deps.js"></script>
+  	<script src="assets/lib/Leaflet-1.0.2/debug/leaflet-include.js"></script>
+    <script src="assets/js/map-markers-samples/sampleMapSingleListingMarker.js"></script>
+    <!-- Main Javascript -->
+    <script src="assets/js/main.js"></script>
+
+    
+    <script>
+
+      
+      $(function(){
+          $('#divHeader').load('header.html');
+      });
+  
+      
+      $(function(){
+          $('#divFooter').load('footer.html');
+      });
+      </script>
+
+<script src="wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+  </body>
+</html>

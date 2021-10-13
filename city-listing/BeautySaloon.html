@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>Community Hub - Beauty Saloon</title>
+    <!-- Google Font(s) -->
+    <link href="https://fonts.googleapis.com/css?family=Capriola|Roboto" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Awesome Icons Font -->
+    <link href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Listing Filter -->
+    <link href="assets/lib/bootstrap-select-master/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="assets/lib/lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- Map -->
+    <link href="assets/lib/Leaflet-1.0.2/dist/leaflet.css" rel="stylesheet">
+    <!-- City Listing Icons -->
+    <link href="assets/fonts/icons/css/import-icons.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/lib/html5shiv-master/dist/html5shiv.min.js"></script>
+      <script src="assets/lib/Respond-master/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Start Body Content Wrapper -->
+    <div class="body-wrapper">
+      <!-- Start header (topbar) -->
+      <div id='divHeader'>
+
+      </div>
+      <!-- End header (topbar) -->
+      <!-- Start Search Popup -->
+      <div class="search-popup container-fluid hero-header">
+        <!-- Start Header Centralizer -->
+        <div class="header-centralizer">
+          <div class="content-centralized">
+            <!-- Start Hero Search -->
+            <div class="hero-search">
+              <form>
+                <fieldset>
+                  <input type="text" class="form-control" data-placeholder="Explore and Enjoy...">
+                  <span class="typingEffect" data-title="Explore and Enjoy//Find New Places//Discover Tasty Goodies//Do Memorable Check-ins//Go Beyond and Beyond"></span>
+                </fieldset>
+                <!-- Start Search Cities -->
+                <div class="search-cities-toggle"></div>
+                <div class="search-cities">
+                  <div class="cities-list">
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/1.jpg')" data-city-id="1"><span>Boston</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/2.jpg')" data-city-id="2"><span>Chicago</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/3.jpg')" data-city-id="0" class="current"><span>Miami</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/4.jpg')" data-city-id="3"><span>New Orleans</span></a>
+                    <a href="#" style="background-image:url('assets/images/cities/thumbs/5.jpg')" data-city-id="4" class="go-more-cities"><span>More Cities</span></a>
+                    <input class="chosen-city" type="hidden" name="city" value="0">
+                  </div>
+                </div>
+                <!-- End Search Cities -->
+                <div class="search-submit">
+                  <input type="submit" value=" ">
+                  <i class="hero-search-icon"></i>
+                </div>
+              </form>
+            </div>
+            <!-- End Hero Search -->
+            <!-- Start Search Categories -->
+            <div class="search-categories">
+              <div class="categories">
+                <a class="icon-platter child" href="#">Restaurant</a>
+                <a class="icon-teacup child" href="#">Café</a>
+                <a class="icon-moon" href="#">Nightlife</a>
+                <a class="icon-landscape" href="#">Outdoor</a>
+                <a class="icon-home" href="#">Lodging</a>
+                <a class="icon-car child" href="#">Car Dealer</a>
+                <a class="icon-hanger child" href="#">Clothing</a>
+                <a class="icon-bench-press child" href="#">Gim</a>
+                <a class="icon-saw child" href="#">Home Service</a>
+                <a class="icon-laundry child" href="#">Laundry</a>
+                <a class="icon-bag-dollar child" href="#">Bank</a>
+                <a class="icon-palette child" href="#">Art Gallery</a>
+                <a class="icon-library child" href="#">Bookstore</a>
+                <a class="icon-chair child" href="#">Furniture</a>
+                <a class="icon-receipt" href="#">Coupons</a>
+                <a class="icon-lan2" href="#">Online Order</a>
+                <a class="icon-paw" href="#">Pets Friendly</a>
+                <a class="icon-wheelchair" href="#">Accessible</a>
+                <a class="icon-wifi" href="#">Wi-Fi</a>
+                <a class="icon-city" href="#">More Options</a>
+              </div>
+            </div>
+            <!-- End Search Categories -->
+          </div>
+        </div>
+      </div>
+      <!-- End Search Popup -->
+      <!-- Start Login/Register Popup -->
+      <div class="login-popup container hero-header">
+        <div class="row">
+    			<div class="col-sm-12 text-center">
+    				<div class="panel panel-form">
+    					<div class="panel-heading">
+    						<div class="row">
+    							<div class="col-xs-6">
+    								<a href="#" class="active" id="login-form-link">Login</a>
+    							</div>
+    							<div class="col-xs-6">
+    								<a href="#" id="register-form-link">Register</a>
+    							</div>
+    						</div>
+    						<hr>
+    					</div>
+    					<div class="panel-body">
+    						<div class="row">
+    							<div class="col-lg-12">
+    								<form id="login-form" action="#" method="post">
+    									<div class="form-group">
+    										<input type="text" name="username" id="login-username" tabindex="1" class="form-control" placeholder="Username" value="">
+    									</div>
+    									<div class="form-group">
+    										<input type="password" name="password" id="login-password" tabindex="2" class="form-control" placeholder="Password">
+    									</div>
+    									<div class="form-group text-center">
+    										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+    										<label for="remember"> Remember Me</label>
+    									</div>
+    									<div class="form-group">
+    										<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-submit" value="Log In">
+    									</div>
+    									<div class="form-group">
+    										<div class="row">
+    											<div class="col-lg-12">
+    												<div class="text-center">
+    													<a href="#" tabindex="5" class="login-forgot-password">Forgot Password?</a>
+    												</div>
+    											</div>
+    										</div>
+    									</div>
+    								</form>
+    								<form id="register-form" action="#" method="post">
+    									<div class="form-group">
+    										<input type="text" name="username" id="register-username" tabindex="1" class="form-control" placeholder="Username" value="">
+    									</div>
+    									<div class="form-group">
+    										<input type="email" name="email" id="register-email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+    									</div>
+    									<div class="form-group">
+    										<input type="password" name="password" id="register-password" tabindex="2" class="form-control" placeholder="Password">
+    									</div>
+    									<div class="form-group">
+    										<input type="password" name="confirm-password" id="register-confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+    									</div>
+    									<div class="form-group">
+    										<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-submit" value="Register Now">
+    									</div>
+    								</form>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+      </div>
+      <!-- End Login/Register Popup -->
+      <!-- Start Map Listing -->
+      <div class="pg-header">
+        <div class="row page-head">
+          <div class="current-page-info1">
+            <div class="breadcrumbs text-left">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Beauty Saloon</a></li>
+             
+              </ul>
+            </div>
+            <div class="current-category">
+              <div class="container-fluid hero-header h-video ">
+                <!-- Start Header Centralizer -->
+                <div class="header-centralizer">
+                  <div class="content-centralized">
+                    <!-- Start Hero Search -->
+                    <div class="hero-search">
+                      <form>
+                        <fieldset>
+                          <input type="text" class="form-control" data-placeholder="Explore and Enjoy...">
+                          <span class="typingEffect"
+                            data-title="Explore and Enjoy//Find New Places//Discover Tasty Goodies//Do Memorable Check-ins//Go Beyond Horizon"></span>
+                        </fieldset>
+                        <!-- Start Search cities Toggle -->
+                        <div class="search-cities-toggle"></div>
+                        <!-- End Search cities Toggle -->
+                        <!-- Start Search Cities -->
+                        <div class="search-cities">
+                          <!-- <div class="cities-list">
+                              <a href="#" style="background-image:url('assets/images/cities/thumbs/1.jpg')" data-city-id="1"><span>Boston</span></a>
+                              <a href="#" style="background-image:url('assets/images/cities/thumbs/2.jpg')" data-city-id="2"><span>Chicago</span></a>
+                              <a href="#" style="background-image:url('assets/images/cities/thumbs/3.jpg')" data-city-id="0" class="current"><span>Miami</span></a>
+                              <a href="#" style="background-image:url('assets/images/cities/thumbs/4.jpg')" data-city-id="3"><span>New Orleans</span></a>
+                              <a href="#" style="background-image:url('assets/images/cities/thumbs/5.jpg')" data-city-id="4" class="go-more-cities"><span>More Cities</span></a>
+                              <input class="chosen-city" type="hidden" name="city" value="0">
+                            </div> -->
+                        </div>
+                        <!-- End Search Cities -->
+                        <div class="search-submit">
+                          <input type="submit" value=" ">
+                          <i class="hero-search-icon"></i>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- End Hero Search -->
+                    <!-- Start Search Categories -->
+                    <div class="search-categories">
+                      <div class="categories">
+                        <a class="icon-platter child" href="resturant.html">Restaurant</a>
+                        <a class="icon-teacup child" href="coffee.html">Café</a>
+                        <a class="icon-spotlights" href="activites.html">Activities</a>
+                        <a class="icon-presentation" href="Cinema.html">Cinema</a>
+                        <a class="icon-home" href="hotel.html">Hotel</a>
+                        <a class="icon-car child" href="#">Car Dealer</a>
+                        <a class="icon-first-aid" href="hospital.html">Hospital</a>
+                        <a class="icon-bench-press child" href="gym.html">Gym</a>
+                        <a class="icon-laundry child" href="lundry.html">Laundry</a>
+                        <a class="icon-pills" href="pharmacy.html">Pharmacy</a>
+                        <a class="icon-plane" href="Airline.html">Airline</a>
+                        <a class="icon-haircut" href="BeautySaloon.html">Beauty Saloon</a>
+                        <a class="icon-gas" href="Gasoline.html">Gasoline filling</a>
+                        <a class="icon-power" href="repair.html">Electrical Repair</a>
+                        <a class="icon-broom" href="House-Maid.html">House Maid</a>
+                      </div>
+                    </div>
+                    <!-- End Search Categories -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listing-flag icon-flag"></div>
+          </div>
+          <div class="map-buttom">
+          
+          </div>
+        </div>
+        <div id="map"></div>
+        
+      </div>
+      <!-- End Map Listing -->
+      <!-- Start Listings Counter and Filter -->
+      <div class="container-fluid listing-block">
+        <div class="row listing-results">
+         
+          <!-- Start Listings Filter -->
+         
+          <!-- End Listings Filter -->
+        </div>
+      </div>
+      <!-- End Listings Counter and Filter -->
+      <!-- Start Listings Container  -->
+      <div class="container-fluid listing-block listings-has-sidebar">
+        <div class="row listing grid6 rounded-pic no-exp-on-mobile no-addr-on-mobile white">
+          <!-- Start Listing -->
+          <div class="col-md-9 text-center">
+            <!-- Start Listing Item Col -->
+            <div class="col-sm-12 wow animate__animated  animate__backInUp" style="background-color:rgba(62, 128, 250, 0.1);">
+              <div class="listing-item" >
+                <a href="https://www.instagram.com/lesalon.jeddah/" class="category-icon  icon-haircut"></a>
+                <a href="https://website-566224274917329982887-beautysalon.business.site/" class="listing-item-link">
+                  <img alt="" src="assets/images/Salon/le.jpg" />
+                  <div class="listing-item-rating">4.9</div>
+                  <div class="listing-item-title-centralizer">
+                    <div class="listing-item-title">
+                      Le Salon
+                    </div>
+                    <div class="feat-data">
+                      <div class="ribbon">~ 1500SR - 6000SR</div>
+                    </div>
+                    <div class="listing-item-data">
+                      <div class="listing-item-address" href="#">
+                        Prince Sultan Rd, Ar Rawdah, Jeddah 23421
+                      </div>
+                      <div class="listing-item-excerpt">
+                        Beauty, Cosmetic & Personal Care.
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="listing-category-name">
+                    Salon
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- End Listing Item Col -->
+            <!-- Start Listing Item Col -->
+            <div class="col-sm-12 wow animate__animated  animate__backInUp" style="background-color:rgba(250, 253, 62, 0.1);">
+              <div class="listing-item">
+                <a href="https://instagram.com/bouthainasalon?utm_medium=copy_link" class="category-icon icon-haircut"></a>
+                <a href="https://instagram.com/bouthainasalon?utm_medium=copy_link" class="listing-item-link">
+                  <img alt="" src="assets/images/Salon/bouthaina.png" />
+                  <div class="listing-item-rating">4.2</div>
+                  <div class="listing-item-title-centralizer">
+                    <div class="listing-item-title">
+                      Bouthaina Salon & Spa
+                    </div>
+                    <div class="listing-item-data">
+                      <div class="listing-item-address" href="#">
+                        Prince Sultan St ,Jeddah, Saudi Arabia
+                      </div>
+                      <div class="listing-item-excerpt">
+                        Beauty, Cosmetic & Personal Care.
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="listing-category-name">
+                    Salon
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- End Listing Item Col -->
+            <!-- Start Listing Item Col -->
+            <div class="col-sm-12 wow animate__animated  animate__backInUp" style="background-color:rgba(62, 128, 250, 0.1);">
+              <div class="listing-item">
+                <a href="http://oriana-sa.com/en/home" class="category-icon icon-haircut"></a>
+                <a href="http://oriana-sa.com/en/home" class="listing-item-link">
+                  <img alt="" src="assets/images/trending/Salon.png" />
+                  <div class="listing-item-rating">4.6</div>
+                  <div class="listing-item-title-centralizer">
+                    <div class="listing-item-title">
+                      ORIANA
+                    </div>
+                    <div class="feat-data">
+                      <div class="ribbon">Special Proce for student</div>
+                    </div>
+                    <div class="listing-item-data">
+                      <div class="listing-item-address" href="#">
+                        Ash Shati, Al Kurnaysh Rd, Atallah Commercial Center Ibn Tayhan، Jeddah
+                      </div>
+                      <div class="listing-item-excerpt">
+                        "Oriana Salon and Spa has become a distinctive name in the world of beauty and hair care. Over the past few years, Oriana Salon and Spa has established itself by becoming one the most prominent names in the salon industry; not only in the Kingdom but also in the Middle East. In a city as cosmopolitan as Jeddah, Oriana has managed to grow a strong following among the elite female demographic. Oriana offers an assorted and exquisite range of services and innovative techniques for their skin and hair treatments; while maintaining their authenticity by being one of very few local brands in the Kingdom."
+                      </div>
+                      <div class="amenities">
+                        <span class="icon-credit-card">Accepts Credit Cards</span>
+                        <span class="icon-pipe">Smoking Allowed</span>
+                        <span class="icon-parking">Parking</span>
+                     
+                     
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-category-name">
+                    Salon
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- End Listing Item Col -->
+            <!-- Start Listing Item Col -->
+            <div class="col-sm-12 wow animate__animated  animate__backInUp" style="background-color:rgba(250, 253, 62, 0.1);">
+              <div class="listing-item">
+                <a href="http://www.jamalouki.com/" class="category-icon icon-haircut"></a>
+                <a href="http://www.jamalouki.com/" class="listing-item-link">
+                  <img alt="" src="assets/images/Salon/jamalik.jpg" />
+                  <div class="listing-item-rating">4.6</div>
+                  <div class="listing-item-title-centralizer">
+                    <div class="listing-item-title">
+                      Jamalouki Salon
+                    </div>
+                    <div class="feat-data">
+                      <div class="ribbon">Starts from ~550SR</div>
+                    </div>
+                    <div class="listing-item-data">
+                      <div class="listing-item-address" href="#">
+                        Al Andalus, Jeddah 23322
+                      </div>
+                      <div class="listing-item-excerpt">
+                      
+"Your beauty salon offers a range of women's beauty care services"
+                      </div>
+                      <div class="amenities">
+                        <span class="icon-credit-card">Accepts Credit Cards</span>
+                       
+                        <span class="icon-parking">Parking</span>
+                     
+                     
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-category-name">
+                    Salon
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- End Listing Item Col -->
+            <!-- Start Listing Item Col -->
+            <div class="col-sm-12 wow animate__animated  animate__backInUp"  style="background-color:rgba(62, 128, 250, 0.1);">
+              <div class="listing-item">
+                <a href="https://mannacenter.business.site/?utm_source=gmb&utm_medium=referral" class="category-icon icon-haircut"></a>
+                <a href="https://mannacenter.business.site/?utm_source=gmb&utm_medium=referral" class="listing-item-link">
+                  <img alt="" src="assets/images/Salon/mnna.jpeg" />
+                  <div class="listing-item-rating">4.1</div>
+                  <div class="listing-item-title-centralizer">
+                    <div class="listing-item-title">
+                      Manna Center
+                    </div>
+                    <div class="feat-data">
+                      <div class="ribbon">~1000SR</div>
+                    </div>
+                    <div class="listing-item-data">
+                      <div class="listing-item-address" href="#">
+                        Al Khalidiyah District, Jeddah 23422 7659
+
+                      </div>
+                      <div class="listing-item-excerpt">
+                        Manna Center is a salon where beauty professionals who have a natural talent.
+                      </div>
+                      <div class="amenities">
+                        <span class="icon-credit-card">Accepts Credit Cards</span>
+                        <span class="icon-pipe">Smoking Allowed</span>
+                        <span class="icon-parking">Parking</span>
+                        <span class="icon-bicycle">Bike Parking</span>
+                       
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-category-name">
+                    Salon
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- End Listing Item Col -->
+            <!-- Start Listing Item Col -->
+            <div class="col-sm-12 wow animate__animated  animate__backInUp"   style="background-color:rgba(250, 253, 62, 0.1);">
+              <div class="listing-item">
+                <a href="https://www.instagram.com/maldacenter/" class="category-icon icon-haircut"></a>
+                <a href="https://www.instagram.com/maldacenter/" class="listing-item-link">
+                  <img alt="" src="assets/images/Salon/milda.jpg" />
+                  <div class="listing-item-rating">3,6</div>
+                  <div class="listing-item-title-centralizer">
+                    <div class="listing-item-title">
+                      Malda Center
+                    </div>
+                    <div class="feat-data">
+                      <div class="ribbon">Open from 09:00 - Midnight</div>
+                    </div>
+                    <div class="listing-item-data">
+                      <div class="listing-item-address" href="#">
+                        8291 Abdul Maqsud Khojah, 2718
+                      </div>
+                      <div class="listing-item-excerpt">
+                        Women's beauty care services
+                      </div>
+                      <div class="amenities">
+                        <span class="icon-credit-card">Accepts Credit Cards</span>
+                        <span class="icon-pipe">Smoking Allowed</span>
+                        <span class="icon-parking">Parking</span>
+                         <span class="icon-accessibility">Special</span>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-category-name">
+                    Salon
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- End Listing Item Col -->
+            <!-- Start Listing Item Col -->
+           
+            <!-- End Listing Item Col -->
+            <!-- Start Listing Item Col -->
+          </div>
+          <!-- End Listing -->
+          <!-- Start Sidebar -->
+          <div class="col-md-3 sidebar-right">
+            <div class="widget-area">
+              <!--Start Widget Container-->
+              <div class="widget-container">
+                <!--Start Widget-->
+                <div class="widget news-archive wow animate__animated  animate__backInUp"> <!--start widget-->
+                  <div class="block">
+                    <div class="widget-title">
+                      <div class="the-title">
+                        CITIES
+                      </div>
+                    </div>
+                    <div class="widget-content">
+                      <ul>
+                        <li class="item">
+                          <a href="#">Dammam</a>
+                        </li>
+                        <li class="item">
+                          <a href="#">Taif</a>
+                        </li>
+                        <li class="item">
+                          <a href="#">Albaha</a>
+                        </li>
+                        <li class="item">
+                          <a href="#">Riyadh</a>
+                        </li>
+                       
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--End Widget-->
+                <!--Start Widget-->
+                <div class="widget news-categories wow animate__animated  animate__backInUp"> <!--start widget-->
+                  <div class="block">
+                    <div class="widget-title">
+                      <div class="the-title">
+                        CATEGORIES
+                      </div>
+                    </div>
+                    <div class="widget-content">
+                      <ul>
+                        <li class="item">
+                          <a href="resturant.html">Restaurant</a>
+                        </li>
+                        <li class="item">
+                          <a href="Cinema.html">Cinema</a>
+                        </li>
+                        <li class="item">
+                          <a href="activites.html">Activities</a>
+                        </li>
+                        <li class="item">
+                          <a href="hotel.html">Hotel</a>
+                        </li>
+                      
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--End Widget-->
+                <!--Start Widget-->
+                <div class="widget newest-posts wow animate__animated  animate__backInUp"> <!--start widget-->
+                  <div class="block">
+                    <div class="widget-title">
+                      <div class="the-title">
+                        MOST RECENT
+                      </div>
+                    </div>
+                    <div class="widget-content">
+                      <div class="item">
+                        <a href="#">
+                          <div class="img">
+                            <img alt="" src="assets/images/categories/toki.jpg" />
+                          </div>
+                          <div class="text">
+                            <div class="title">
+                              Toki Restaurant
+                            </div>
+                            <div class="date">
+                              Feb 12, 2017
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a href="#">
+                          <div class="img">
+                            <img alt="" src="assets/images/categories/rosewood.jpg" />
+                          </div>
+                          <div class="text">
+                            <div class="title">
+                              Rosewood Hotel
+                            </div>
+                            <div class="date">
+                              Feb 07, 2017
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a href="#">
+                          <div class="img">
+                            <img alt="" src="assets/images/categories/byada.jpg" />
+                          </div>
+                          <div class="text">
+                            <div class="title">
+                              Fall In Love All Over Again During These Romantic Activities in NYC
+                            </div>
+                            <div class="date">
+                              Feb 02, 2017
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End Widget-->
+                <!--Start Widget-->
+                <div class="widget tags wow animate__animated  animate__backInUp"> <!--start widget-->
+                  <div class="block">
+                    <div class="widget-title">
+                      <div class="the-title">
+                        TOP TAGS
+                      </div>
+                    </div>
+                    <div class="widget-content list zoom-text">
+                      <ul class="">
+                        <li><a href="#">Lunch</a></li>
+                        <li><a href="#">Dinner</a></li>
+                        <li><a href="#">Breakfast</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Pub</a></li>
+                        <li><a href="#">Drinks</a></li>
+                        <li><a href="#">Wine</a></li>
+                        <li><a href="#">Couple</a></li>
+                        <li><a href="#">Families</a></li>
+                        <li><a href="#">Business</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--End Widget-->
+              </div>
+              <!--End Widget Container-->
+            </div>
+          </div>
+          <!-- End Sidebar -->
+        </div>
+       
+      </div>
+      <!-- End Listings Container  -->
+      <!-- Start Footer -->
+      <div id='divFooter'>
+
+      </div>
+      <!-- End Footer -->
+    </div>
+    <!-- End Body Content Wrapper -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/jquery-ui.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/lib/lightbox2-master/dist/js/lightbox.min.js"></script>
+    <!-- Typing Effect -->
+    <script src="assets/lib/typed.js-master/dist/typed.min.js"></script>
+    <!-- Dragging Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery.dragscroll.js"></script>
+    <!-- Horizontal Mousewheel Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery-mousewheel-master/jquery.mousewheel.min.js"></script>
+    <!-- Listing Filter -->
+    <script src="assets/lib/bootstrap-select-master/js/bootstrap-select.js"></script>
+    <!-- To Self Hosted Hero Video -->
+    <script src="assets/lib/bideo.js-master/bideo.js"></script>
+    <!-- Map -->
+    <script src="assets/lib/Leaflet-1.0.2/build/deps.js"></script>
+  	<script src="assets/lib/Leaflet-1.0.2/debug/leaflet-include.js"></script>
+    <script src="assets/js/map-markers-samples/sampleMapListingMarkers.js"></script>
+    <!-- Main Javascript -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+
+      $(function(){
+              $('#divHeader').load('header.html');
+          });
+      
+          
+          $(function(){
+              $('#divFooter').load('footer.html');
+          });
+      
+      </script>
+      <script src="wow.min.js"></script>
+      <script>
+      new WOW().init();
+      </script>
+      
+  </body>
+</html>
